@@ -1,0 +1,19 @@
+name: RC
+main: me.beatcomet.RC.RC
+version: 1.0
+commands:
+   redeem:
+      description: Redeem a code
+      usage: /<command> [code]
+   code:
+      description: Set a new code
+      usage: /<command> set [name] [itemid] [amount]
+   code:
+      description: remove a code
+      usage: /<command> remove [name]
+   code:
+      descroptiom: randomly generate a code
+      usage: /<command> generate
+   lng:
+      description: set the generated code length
+      usage: /<command> [length]
