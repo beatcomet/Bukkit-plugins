@@ -228,9 +228,14 @@ public class RC extends JavaPlugin{
 
         	    if(args.length==0) {
         		sender.sendMessage(ChatColor.DARK_PURPLE + "[RC]" + ChatColor.RED  + " No code provided!");
+        		return true;
         	    }
        		    String code = args[0].toUpperCase();
        		    CodeRecord record = codeRecords.get(code);
+       		    if(record==null) {
+        		sender.sendMessage(ChatColor.DARK_PURPLE + "[RC]" + ChatColor.RED  + " No such code exists");
+        		return true;
+       		    }
        		    if(record.redeems<=0) {
         		sender.sendMessage(ChatColor.DARK_PURPLE + "[RC]" + ChatColor.GREEN + code + ChatColor.RED + " code all used up!");
         		codeRecords.remove(code);
