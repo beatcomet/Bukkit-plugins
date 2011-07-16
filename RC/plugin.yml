@@ -1,0 +1,19 @@
+name: RedeemCodes
+main: me.beatcomet.RC.RC
+version: 1.1
+commands:
+   redeem:
+      description: Redeem a code
+      usage: /<command> code
+   code:
+      description: Set, check, remove a code
+      usage: |
+        /<command> set <name/generate> [itemid] [amount] [redeems]
+        adds new code for <redeems> amount of item <itemid> (having <amount> each)
+        /<command> remove name
+        removes <name> code
+        /<command> status <name>
+        check status of <name> code
+   rcodelength:
+      description: set the generated code length
+      usage: /<command> length
